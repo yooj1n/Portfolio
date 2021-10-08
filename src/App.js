@@ -1,8 +1,12 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
+import About from './Components/About';
 
 function App() {
   return (
-    <div>Hi there!!</div>
+    <HelmetProvider>
+    <About />
+    </HelmetProvider>
   )
 }
 
