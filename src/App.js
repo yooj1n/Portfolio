@@ -1,12 +1,20 @@
 import React from 'react';
-import { HelmetProvider } from 'react-helmet-async';
-import About from './Components/About';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './GlobalStyle';
+import MainWrap from './Layout/MainWrap';
+import About from './Screens/About';
+import Head from './Screens/Head';
+import theme from './theme';
 
 function App() {
   return (
-    <HelmetProvider>
-    <About />
-    </HelmetProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <MainWrap>
+        <Head />
+        <About />
+      </MainWrap>
+    </ThemeProvider>
   )
 }
 
