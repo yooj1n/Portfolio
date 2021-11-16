@@ -31,8 +31,12 @@ const BtnWrap = styled.div`
 const Btn = styled.button`
   padding: 5px 10px;
   margin-right: 8px;
-  background-color: ${(props) => props.theme.BtnColor};
+  background-color: ${(props) => props.theme.darkblue};
   border-radius: 5px;
+
+  :hover {
+    background-color: ${(props) => props.theme.blue};
+  }
 `;
 
 const BtnText = styled.span`

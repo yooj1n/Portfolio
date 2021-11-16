@@ -4,7 +4,8 @@ const size = {
 }
 
 const theme = {
-  BtnColor : "#f1c40f",
+  blue : "#00a8ff",
+  darkblue : "#192a56",
   mobile: `(max-width: ${size.mobile})`,
   tablet: `(max-width: ${size.tablet})`,
   desktop: `(min-width: ${size.tablet})`
