@@ -1,3 +1,5 @@
+import { faCloudDownloadAlt, faDownload, faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 
@@ -54,7 +56,8 @@ const Head = () => {
       </SecondWrap>
       <BtnWrap>
         <Btn>
-          <BtnText>DOWNLOAD RESUME</BtnText>
+          <FontAwesomeIcon icon={faCloudDownloadAlt} color="white" pull="left"/>
+          <BtnText>DOWNLOAD CV</BtnText>
         </Btn>
         <Btn>
           <BtnText>CONTACT</BtnText>

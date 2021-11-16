@@ -14,11 +14,11 @@ const Wrap = styled.div`
   }
 `
 
-const MainWrap = ({children}) => {
+const FullWrap = ({children}) => {
     return (
       <Wrap>
         {children}
       </Wrap>)
 }
 
-export default MainWrap;
+export default FullWrap;

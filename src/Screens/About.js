@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainContainer from "../Layout/MainContainer";
 import Separator from "../Layout/TitleSeparator";
 import profile from "../img/profile.png";
+import { Emphasis } from "../Components/shared";
 
 const IMG = styled.img`
 width: 180px;
@@ -56,13 +57,6 @@ const BR = styled.br``;
 
 const Spacer = styled.div`
 height: 10px;
-`;
-
-const Emphasis = styled.span`
-  background-color: ${(props) => props.theme.darkblue};
-  padding: 2px 7px;
-  border-radius: 10px;
-  color: white;
 `;
 
 const About = () => {
