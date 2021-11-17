@@ -6,6 +6,9 @@ const Title = styled.div`
   font-weight: 300;
   font-style: italic;
   padding-top: 50px;
+  @media ${(props) => props.theme.mobile} {
+    padding-top: 20px;
+  }
 `;
 
 const Line = styled.div`

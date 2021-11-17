@@ -29,10 +29,11 @@ const SmallWrap = styled.div`
 const Description = styled.div`
   font-size: 14px;
   font-weight: 300;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
   text-align: center;
   @media ${(props) => props.theme.mobile} {
     font-size: 12px;
+    margin: 10px 0px;
   }
 `
 

@@ -7,7 +7,7 @@ const Wrap = styled.div`
   margin: auto;
   font-size: 25px;
   @media ${(props) => props.theme.tablet} {
-    width:80%;
+    width:90%;
   }
   @media ${(props) => props.theme.mobile} {
     width:90%;
