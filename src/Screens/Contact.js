@@ -24,10 +24,10 @@ display: flex;
 flex-direction: row;
 align-items:center;
 
-  color: ${(props) => props.theme.darkblue};
+  color: ${(props) => props.theme.base};
 
   :hover {
-    color: ${(props) => props.theme.blue};
+    color: ${(props) => props.theme.emphasis};
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
   }

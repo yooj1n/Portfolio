@@ -4,8 +4,8 @@ const size = {
 }
 
 const theme = {
-  blue : "#1e3799",
-  darkblue : "#222f3e",
+  emphasis : "#ffa801",
+  base : "#000000",
   mobile: `(max-width: ${size.mobile})`,
   tablet: `(max-width: ${size.tablet})`,
   desktop: `(min-width: ${size.tablet})`

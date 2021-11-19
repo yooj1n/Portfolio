@@ -33,11 +33,13 @@ const BtnWrap = styled.div`
 const Btn = styled.button`
   padding: 5px 10px;
   margin-right: 8px;
-  background-color: ${(props) => props.theme.darkblue};
+  background-color: ${(props) => props.theme.base};
   border-radius: 5px;
 
   :hover {
-    background-color: ${(props) => props.theme.blue};
+    background-color: ${(props) => props.theme.emphasis};
+    transform: scale(1.05);
+    transition: 0.25s ease-in-out;
   }
 `;
 
