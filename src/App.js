@@ -6,6 +6,7 @@ import About from './Screens/About';
 import Contact from './Screens/Contact';
 import Footer from './Screens/Footer';
 import Head from './Screens/Head';
+import Projects from './Screens/Projects';
 import Strength from './Screens/Strength';
 import theme from './theme';
 
@@ -17,6 +18,7 @@ function App() {
         <Head />
         <About />
         <Strength />
+        <Projects />
         <Contact />
       </FullWrap>
       <Footer />

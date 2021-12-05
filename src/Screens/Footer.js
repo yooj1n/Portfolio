@@ -17,6 +17,7 @@ const FooterText = styled.p`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* width: max-content; */
 `;
 
 const Footer = () => {
