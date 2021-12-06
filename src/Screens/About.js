@@ -48,7 +48,7 @@ const Description = styled.div`
  font-size: 16px;
  line-height: 25px;
  @media ${(props) => props.theme.mobile} {
-    font-size:12px;
+    font-size: 10px;
     line-height: 20px;
   }
 `;
@@ -73,7 +73,7 @@ const About = () => {
         짧은 기간동안 다양한 기술을 접하기 위해 여러 강의를 들으며 학습했습니다. 
         <Spacer />
         현재는 학습한 것을 토대로<BR />
-        상업적 이용이 가능한 풀페이지 소스를 이용한 ECORITZ사 웹 페이지 개발 단계에 있으며,<BR />
+        상업적 이용이 가능한 풀페이지 소스를 이용한 ECORITZ사 웹 페이지 개발 단계이며,<BR />
         반려견 유치원 전용 알림장 어플을 기획하고 있습니다. 
         <Spacer />
         확장성, 유지 보수성이 높은 클린 코드를 지향하며,<BR />

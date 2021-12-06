@@ -2,6 +2,8 @@ import { faCloudDownloadAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
+import CV from "../files/CV.pdf"
+import logo from "../img/logo투명.png"
 
 const HeadWrap = styled.div`
   padding-top: 30px;
@@ -48,10 +50,33 @@ const BtnText = styled.span`
   color: white;
 `;
 
+const Download = styled.a`
+  font-size: 12px;
+  color: white;
+`;
+
+// const IMG = styled.img`
+// position: absolute;
+// top: 3%;
+// left: 70%;
+// width: 150px;
+
+// @media ${(props) => props.theme.tablet} {
+//   visibility: hidden;
+//   }
+// `;
+
 const Head = () => {
+  const hadleBottom = () => {
+    window.scroll({
+      top : document.documentElement.scrollHeight,
+      behavior: "smooth",
+    })
+  }
   return (
     <HeadWrap>
       <Name>김유진</Name>
+      {/* <IMG src={logo} /> */}
       <SecondWrap>
         <English>Front-End</English>
         <Korean>프론트엔드 주니어 개발자</Korean>
@@ -59,9 +84,9 @@ const Head = () => {
       <BtnWrap>
         <Btn>
           <FontAwesomeIcon icon={faCloudDownloadAlt} color="white" pull="left"/>
-          <BtnText>DOWNLOAD CV</BtnText>
+          <Download href={CV} download="CV_YJ.pdf">DOWNLOAD CV</Download>
         </Btn>
-        <Btn>
+        <Btn onClick={hadleBottom}>
           <BtnText>CONTACT</BtnText>
         </Btn>
       </BtnWrap>

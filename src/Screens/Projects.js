@@ -12,29 +12,49 @@ import WebContainer from "../Layout/WebContainer";
 
 const MainWrap = styled.div`
   width: 100%;
-  @media ${(props) => props.theme.mobile} {
-    margin-top: 20px;
-  }
 `;
 
 const AppWebWrap = styled.div`
 display: flex;
 flex-direction: row;
 margin-top: 50px;
+@media ${(props) => props.theme.tablet} {
+    margin-bottom: 30px;
+  }
 @media ${(props) => props.theme.mobile} {
     flex-direction:column;
     margin-bottom: 0px;
+    margin-top: 20px;
   }
 `;
 
 const Description = styled.div`
-font-weight: 300;
+font-weight: 400;
 font-size: 14px;
-margin: 15px 0px 0px 10px;
+margin: 15px 0px 0px 5px;
+line-height: 30px;
+@media ${(props) => props.theme.tablet} {
+  font-size: 12px;
+  margin-left: 0px;
+  line-height: 25px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 8px;
+    line-height: 15px;
+  }
 `;
 
 const IMG = styled.img`
 width: 100%;
+`
+const F = styled.span`
+font-size: 18px;
+font-weight: 600;
+font-style: italic;
+color: #028FD9;
+@media ${(props) => props.theme.mobile} {
+  font-size: 14px;
+  }
 `
 
 const Projects = () => {
@@ -44,29 +64,69 @@ const Projects = () => {
     <MainWrap>
       <AppWebWrap>
         <AppContainer src={diary} Name="감정기록 APP" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/uj-diary">
-          <Description>-Realm <br/> -I dont know</Description>
+          <Description>
+          ㆍ Realm SDK(MongoDB)<br/>
+          ㆍ Stack/Tabs nivigation<br/>
+          ㆍ Screen Styling<br/>
+          ㆍ Create / Read / Delete<br/>
+          ㆍ Admob 광고 삽입<br/>
+          </Description>
         </AppContainer>
         <AppContainer src={language} Name="Language App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/langaugeApp">
-          <Description>하하하하핳 미치겠군</Description>
+          <Description>
+          ㆍ Interactive Animation<br/>
+          ㆍ Interpolations<br/>
+          ㆍ Pan Responder<br/>
+          ㆍ Cards Drag and Drop<br/>
+          </Description>
         </AppContainer>
       </AppWebWrap>
       <AppWebWrap>
+        {/* Coin App */}
         <AppContainer src={coin} Name="Coin App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/social-coin">
-          <Description>-Realm <br/> -I dont know</Description>
+          <Description>
+          ㆍ Firebase IOS Setup<br/>
+          ㆍ API fetch<br/>
+          ㆍ Create Account<br/>
+          ㆍ Flat List<br/>
+          ㆍ Victory Chart<br/>
+          </Description>
         </AppContainer>
         <AppContainer src={movies1} Name="Movies App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/noovies">
-          <Description>하하하하핳 미치겠군</Description>
+          <Description>
+          ㆍ API fetch<br/>
+          ㆍ 무제한 스크롤<br/>
+          ㆍ Detail Screen<br/>
+          ㆍ Search<br/>
+          </Description>
         </AppContainer>
       </AppWebWrap>
       <AppWebWrap>
+        {/* Tweet */}
         <WebContainer src={Tweet} Name="Tweet Web" href="https://github.com/yooj1n/TIL/tree/main/React/nwitter">
-        <Description>하하하하핳 미치겠군</Description>
+        <Description>
+          <F>FireBase </F>에서 제공하는<br/>
+          ㆍ Provider - Social Login(Google,Github,Email)<br/>
+          ㆍ Auth Service - 계정 생성<br/>
+          ㆍ Firestore - Realtime Tweet Create and Read<br/>
+          ㆍ dbService - Tweet Delete and Update<br/>
+          ㆍ FileReader API -  Image File Upload <br/>
+          ㆍ Update Profile page
+        </Description>
         </WebContainer>
       </AppWebWrap>
       <AppWebWrap>
+        {/* Carrot Game */}
       <WebContainer src={CarrotGame} Name="Carrot Game" ES6 href="https://github.com/yooj1n/TIL/tree/main/JavaScript/Game/carrotGame">
-        <Description>하하하하핳 미치겠군</Description>
-        </WebContainer>
+        <Description>
+          ㆍ Field 지정<br/>
+          ㆍ Game Count<br/>
+          ㆍ PopUp창 <br/>
+          ㆍ Mouse Events<br/>
+          ㆍ 게임요소 Random 배치<br/>
+          ㆍ Sound 삽입
+        </Description>
+      </WebContainer>
       </AppWebWrap>
     </MainWrap>
     </>

@@ -6,6 +6,7 @@ const Wrap = styled.div`
   flex-direction: column;
   margin: auto;
   font-size: 25px;
+  overflow-x: hidden;
   @media ${(props) => props.theme.tablet} {
     width:90%;
   }

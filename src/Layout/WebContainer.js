@@ -8,6 +8,12 @@ const SWebContainer = styled.div`
 display: flex;
 flex-direction: row;
 width: 100%;
+@media ${(props) => props.theme.mobile} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
 `
 
 const DescWrap = styled.div`
@@ -15,7 +21,10 @@ width: 50%;
 margin-left: 60px;
 position: relative;
   @media ${(props) => props.theme.mobile} {
-    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin : 20px auto 0px auto;
   }
 
 `;
@@ -24,7 +33,7 @@ const Video = styled.video`
   width: 400px;
   border-radius: 15px;
   @media ${(props) => props.theme.mobile} {
-    width: 150px;
+    width: 90%;
   }
 `;
 
@@ -47,10 +56,13 @@ font-size: 14px;
 color: ${(props) => props.theme.base};
 position: absolute;
 bottom: 1%;
-/* transform: translate(0%, -50%); */
 :hover {
   color: ${(props) => props.theme.emphasis};
 }
+@media ${(props) => props.theme.mobile} {
+  position: relative;
+  margin-top: 10px;
+  }
 `;
 
 const Code = styled.span`
