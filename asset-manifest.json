@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.c1bfa68f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c1bfa68f.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.7e363772.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.7e363772.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
     "static/js/2.e22db514.chunk.js": "/Portfolio/static/js/2.e22db514.chunk.js",
@@ -16,11 +16,12 @@
     "static/media/language.536a6920.mp4": "/Portfolio/static/media/language.536a6920.mp4",
     "static/media/logo투명.3d2f34d0.png": "/Portfolio/static/media/logo투명.3d2f34d0.png",
     "static/media/movies1.b49390c8.mp4": "/Portfolio/static/media/movies1.b49390c8.mp4",
+    "static/media/ongoing.4fd4443f.png": "/Portfolio/static/media/ongoing.4fd4443f.png",
     "static/media/profile.da5fa130.png": "/Portfolio/static/media/profile.da5fa130.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5d68f097.js",
     "static/js/2.e22db514.chunk.js",
-    "static/js/main.c1bfa68f.chunk.js"
+    "static/js/main.7e363772.chunk.js"
   ]
 }
