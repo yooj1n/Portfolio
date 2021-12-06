@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Separator from "../Layout/TitleSeparator";
 import diary from "../video/diary.mp4"
-import movies1 from "../video/movies1.mp4"
+import movies from "../video/movies.mp4"
 import language from "../video/language.mp4"
 import coin from "../video/coin.mp4"
 import Tweet from "../video/Tweet.mp4"
 import CarrotGame from "../video/CarrotGame.mp4"
 import AppContainer from "../Layout/AppContainer";
 import WebContainer from "../Layout/WebContainer";
+import ongoing from "../img/ongoing.png"
 
 const MainWrap = styled.div`
   width: 100%;
@@ -46,6 +47,10 @@ line-height: 30px;
 
 const IMG = styled.img`
 width: 100%;
+margin-top: 25px;
+@media ${(props) => props.theme.tablet} {
+  margin-top: 10px;
+}
 `
 const F = styled.span`
 font-size: 18px;
@@ -60,7 +65,7 @@ color: #028FD9;
 const Projects = () => {
   return (
     <>
-    <Separator title="(Ongoing) Projects" />
+    <Separator title="Projects" />
     <MainWrap>
       <AppWebWrap>
         <AppContainer src={diary} Name="감정기록 APP" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/uj-diary">
@@ -72,7 +77,7 @@ const Projects = () => {
           ㆍ Admob 광고 삽입<br/>
           </Description>
         </AppContainer>
-        <AppContainer src={language} Name="Language App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/langaugeApp">
+        <AppContainer src={language} Name="Word App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/langaugeApp">
           <Description>
           ㆍ Interactive Animation<br/>
           ㆍ Interpolations<br/>
@@ -92,7 +97,7 @@ const Projects = () => {
           ㆍ Victory Chart<br/>
           </Description>
         </AppContainer>
-        <AppContainer src={movies1} Name="Movies App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/noovies">
+        <AppContainer src={movies} Name="Movies App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/noovies">
           <Description>
           ㆍ API fetch<br/>
           ㆍ 무제한 스크롤<br/>
@@ -128,6 +133,7 @@ const Projects = () => {
         </Description>
       </WebContainer>
       </AppWebWrap>
+      <IMG src={ongoing} />
     </MainWrap>
     </>
   )

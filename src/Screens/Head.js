@@ -7,6 +7,7 @@ import logo from "../img/logo투명.png"
 
 const HeadWrap = styled.div`
   padding-top: 30px;
+  position: relative;
 `;
 
 const Name = styled.div`
@@ -40,7 +41,7 @@ const Btn = styled.button`
 
   :hover {
     background-color: ${(props) => props.theme.emphasis};
-    transform: scale(1.05);
+    transform: scale(0.95);
     transition: 0.25s ease-in-out;
   }
 `;
@@ -55,16 +56,16 @@ const Download = styled.a`
   color: white;
 `;
 
-// const IMG = styled.img`
-// position: absolute;
-// top: 3%;
-// left: 70%;
-// width: 150px;
+const IMG = styled.img`
+position: absolute;
+top: 20%;
+left: 70%;
+width: 150px;
 
-// @media ${(props) => props.theme.tablet} {
-//   visibility: hidden;
-//   }
-// `;
+@media ${(props) => props.theme.mobile} {
+  visibility: hidden;
+  }
+`;
 
 const Head = () => {
   const hadleBottom = () => {
@@ -76,7 +77,7 @@ const Head = () => {
   return (
     <HeadWrap>
       <Name>김유진</Name>
-      {/* <IMG src={logo} /> */}
+      <IMG src={logo} />
       <SecondWrap>
         <English>Front-End</English>
         <Korean>프론트엔드 주니어 개발자</Korean>
