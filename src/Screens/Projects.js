@@ -72,16 +72,17 @@ const Projects = () => {
           <Description>
           ㆍ Realm SDK(MongoDB)<br/>
           ㆍ Stack/Tabs nivigation<br/>
-          ㆍ Screen Styling<br/>
-          ㆍ Create / Read / Delete<br/>
-          ㆍ Admob 광고 삽입<br/>
+          ㆍ Feeling View Styling<br/>
+          ㆍ Writing / Reading / Deleting<br/>
+          ㆍ Admob 데모 광고 삽입<br/>
           </Description>
         </AppContainer>
         <AppContainer src={language} Name="Word App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/langaugeApp">
           <Description>
           ㆍ Interactive Animation<br/>
           ㆍ Interpolations<br/>
-          ㆍ Pan Responder<br/>
+          ㆍ Pan Responder 제스처 핸들링<br/>
+          ㆍ Cards 무한 생성<br/>
           ㆍ Cards Drag and Drop<br/>
           </Description>
         </AppContainer>
@@ -101,8 +102,9 @@ const Projects = () => {
           <Description>
           ㆍ API fetch<br/>
           ㆍ 무제한 스크롤<br/>
-          ㆍ Detail Screen<br/>
-          ㆍ Search<br/>
+          ㆍ 수직/수평 스크롤 View<br/>
+          ㆍ Detail Screen Styling<br/>
+          ㆍ Movies/Dramas Search<br/>
           </Description>
         </AppContainer>
       </AppWebWrap>
@@ -124,11 +126,12 @@ const Projects = () => {
         {/* Carrot Game */}
       <WebContainer src={CarrotGame} Name="Carrot Game" ES6 href="https://github.com/yooj1n/TIL/tree/main/JavaScript/Game/carrotGame">
         <Description>
-          ㆍ Field 지정<br/>
-          ㆍ Game Count<br/>
+          ㆍ HTML Mark Up<br/>
+          ㆍ 게임 필드 지정<br/>
+          ㆍ 당근/벌레 랜덤 배치<br/>
+          ㆍ 게임 시작/멈춤 버튼<br/>
           ㆍ PopUp창 <br/>
           ㆍ Mouse Events<br/>
-          ㆍ 게임요소 Random 배치<br/>
           ㆍ Sound 삽입
         </Description>
       </WebContainer>
