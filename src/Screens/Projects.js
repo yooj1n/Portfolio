@@ -136,7 +136,7 @@ const Projects = () => {
         </Description>
       </WebContainer>
       </AppWebWrap>
-      <IMG src={ongoing} />
+      {/* <IMG src={ongoing} /> */}
     </MainWrap>
     </>
   )

@@ -8,7 +8,6 @@ const ContactWrap = styled.div`
 width: 100%;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
 margin-top: 50px;
 
   @media ${(props) => props.theme.mobile} {
@@ -19,6 +18,7 @@ margin-top: 50px;
 `;
 
 const ContactContainer = styled.a`
+width: 50%;
 display: flex;
 flex-direction: row;
 align-items:center;
@@ -52,10 +52,10 @@ const Contact = () => {
             <FontAwesomeIcon icon={faGithub} />
             <Name>GITHUB</Name>
         </ContactContainer>
-        <ContactContainer href={"https://www.linkedin.com/in/yooj1nkim"} target="_blank" referrerPolicy={"no-referrer"}>
+        {/* <ContactContainer href={"https://www.linkedin.com/in/yooj1nkim"} target="_blank" referrerPolicy={"no-referrer"}>
             <FontAwesomeIcon icon={faLinkedin} />
             <Name>LINKEDIN</Name>
-        </ContactContainer>
+        </ContactContainer> */}
         <ContactContainer href={"mailto:ujin07150@gmail.com"} target="_blank" referrerPolicy={"no-referrer"}>
             <FontAwesomeIcon icon={faGoogle} />
             <Name>MAIL</Name>

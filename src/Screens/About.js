@@ -17,7 +17,6 @@ border: 1px solid black;
   width: 120px;
   height: 120px;
 }
-
 `;
 
 const ProfileWrap = styled.div`
@@ -35,13 +34,14 @@ const ProfileWrap = styled.div`
 `;
 
 const DescWrap = styled.div`
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  @media ${(props) => props.theme.tablet} {
+  text-align: center;
+  /* @media ${(props) => props.theme.tablet} {
     width:100%;
     text-align: center;
-  }
+  } */
 `;
 
 const Description = styled.div`
@@ -64,20 +64,17 @@ const About = () => {
     <>
     <Separator title="About Me" />
     <MainContainer>
-      <ProfileWrap>
+      {/* <ProfileWrap>
         <IMG src={profile}/>
-      </ProfileWrap>
+      </ProfileWrap> */}
       <DescWrap>
         <Description>
-        리액트와 리액트네이티브를  중점을 두고 준비하고 있습니다.<BR />
-        짧은 기간동안 다양한 기술을 접하기 위해 여러 강의를 들으며 학습했습니다. 
+        React 와 React Native 를 주로 공부하고 있습니다. <BR />
+        인스타그램과 트위터를 클론 코딩하며 공부했고,<BR /> 
+        이를 바탕으로 감정 기록 앱과 코인 추세 앱 등을 개발했습니다. 
         <Spacer />
-        현재는 학습한 것을 토대로<BR />
-        상업적 이용이 가능한 풀페이지 소스를 이용한 ECORITZ사 웹 페이지 개발 단계이며,<BR />
-        반려견 유치원 전용 알림장 어플을 기획하고 있습니다. 
-        <Spacer />
-        확장성, 유지 보수성이 높은 클린 코드를 지향하며,<BR />
-        어떻게든 해내는 <Emphasis>함께 일하고 싶은 개발자</Emphasis>가 되겠습니다.
+        현재는 강아지 유치원 알림장 앱과 ECORITZ 사 웹페이지 개발 외주를 진행하는 중입니다. <BR />
+        앞으로 <Emphasis>리액트 네이티브를 네이티브처럼 다룰 수 있는 개발자</Emphasis>가 되고 싶습니다.
         </Description>
       </DescWrap>
     </MainContainer>
