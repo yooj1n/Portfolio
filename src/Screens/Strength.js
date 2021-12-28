@@ -31,8 +31,9 @@ const Description = styled.div`
   font-weight: 300;
   margin: 20px 0px 0px 0px;
   text-align: center;
-  @media ${(props) => props.theme.mobile} {
+  @media ${(props) => props.theme.tablet} {
     font-size: 12px;
+    line-height: 18px;
     margin: 10px 0px;
   }
 `

@@ -9,7 +9,6 @@ import Tweet from "../video/Tweet.mp4"
 import CarrotGame from "../video/CarrotGame.mp4"
 import AppContainer from "../Layout/AppContainer";
 import WebContainer from "../Layout/WebContainer";
-import ongoing from "../img/ongoing.png"
 
 const MainWrap = styled.div`
   width: 100%;
@@ -45,13 +44,6 @@ line-height: 30px;
   }
 `;
 
-const IMG = styled.img`
-width: 100%;
-margin-top: 25px;
-@media ${(props) => props.theme.tablet} {
-  margin-top: 10px;
-}
-`
 const F = styled.span`
 font-size: 18px;
 font-weight: 600;
@@ -70,8 +62,9 @@ const Projects = () => {
       <AppWebWrap>
         <AppContainer src={diary} Name="감정기록 APP" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/uj-diary">
           <Description>
+          ㆍ Tabs/Stact Navigation<br/>
+          ㆍ CreateContext/useContext<br/>
           ㆍ Realm SDK(MongoDB)<br/>
-          ㆍ Stack/Tabs nivigation<br/>
           ㆍ Feeling View Styling<br/>
           ㆍ Writing / Reading / Deleting<br/>
           ㆍ Admob 데모 광고 삽입<br/>
@@ -92,7 +85,7 @@ const Projects = () => {
         <AppContainer src={coin} Name="Coin App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/social-coin">
           <Description>
           ㆍ Firebase IOS Setup<br/>
-          ㆍ API fetch<br/>
+          ㆍ API fetch(React-query)<br/>
           ㆍ Create Account<br/>
           ㆍ Flat List<br/>
           ㆍ Victory Chart<br/>
@@ -100,11 +93,12 @@ const Projects = () => {
         </AppContainer>
         <AppContainer src={movies} Name="Movies App" href="https://github.com/yooj1n/TIL/tree/main/ReactNative/noovies">
           <Description>
-          ㆍ API fetch<br/>
-          ㆍ 무제한 스크롤<br/>
-          ㆍ 수직/수평 스크롤 View<br/>
-          ㆍ Detail Screen Styling<br/>
-          ㆍ Movies/Dramas Search<br/>
+          ㆍ API fetch(Axios)<br/>
+          ㆍ propTypes<br/>
+          ㆍ UI요소 컴포넌트화<br/>
+          ㆍ Styling (Styled-components)<br/>
+          ㆍ Detail Screen<br/>
+          ㆍ Searching<br/>
           </Description>
         </AppContainer>
       </AppWebWrap>
@@ -115,7 +109,7 @@ const Projects = () => {
           <F>FireBase </F>에서 제공하는<br/>
           ㆍ Provider - Social Login(Google,Github,Email)<br/>
           ㆍ Auth Service - 계정 생성<br/>
-          ㆍ Firestore - Realtime Tweet Create and Read<br/>
+          ㆍ Firestore - Realtime Create and Read<br/>
           ㆍ dbService - Tweet Delete and Update<br/>
           ㆍ FileReader API -  Image File Upload <br/>
           ㆍ Update Profile page
@@ -136,7 +130,6 @@ const Projects = () => {
         </Description>
       </WebContainer>
       </AppWebWrap>
-      {/* <IMG src={ongoing} /> */}
     </MainWrap>
     </>
   )

@@ -6,8 +6,8 @@ import profile from "../img/profile.png";
 import { Emphasis } from "../Components/shared";
 
 const IMG = styled.img`
-width: 180px;
-height: 180px;
+width: 150px;
+height: 150px;
 border-radius: 50%;
 border: 1px solid black;
 @media ${(props) => props.theme.tablet} {
@@ -38,10 +38,11 @@ const DescWrap = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* @media ${(props) => props.theme.tablet} {
+  justify-content: center;
+  @media ${(props) => props.theme.tablet} {
     width:100%;
     text-align: center;
-  } */
+  }
 `;
 
 const Description = styled.div`
@@ -64,9 +65,9 @@ const About = () => {
     <>
     <Separator title="About Me" />
     <MainContainer>
-      {/* <ProfileWrap>
+      <ProfileWrap>
         <IMG src={profile}/>
-      </ProfileWrap> */}
+      </ProfileWrap>
       <DescWrap>
         <Description>
         React 와 React Native 를 주로 공부하고 있습니다. <BR />
