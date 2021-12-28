@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.85aa56db.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.85aa56db.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.04baa589.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.04baa589.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
     "static/js/2.26add56a.chunk.js": "/Portfolio/static/js/2.26add56a.chunk.js",
     "static/js/2.26add56a.chunk.js.map": "/Portfolio/static/js/2.26add56a.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/js/2.26add56a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.26add56a.chunk.js.LICENSE.txt",
-    "static/media/CV.e705296f.pdf": "/Portfolio/static/media/CV.e705296f.pdf",
+    "static/media/CV.a3d908cb.pdf": "/Portfolio/static/media/CV.a3d908cb.pdf",
     "static/media/CarrotGame.cbbb7901.mp4": "/Portfolio/static/media/CarrotGame.cbbb7901.mp4",
     "static/media/Tweet.d2f25e34.mp4": "/Portfolio/static/media/Tweet.d2f25e34.mp4",
     "static/media/coin.53712475.mp4": "/Portfolio/static/media/coin.53712475.mp4",
@@ -16,12 +16,11 @@
     "static/media/language.536a6920.mp4": "/Portfolio/static/media/language.536a6920.mp4",
     "static/media/logo투명.3d2f34d0.png": "/Portfolio/static/media/logo투명.3d2f34d0.png",
     "static/media/movies.ae9f3f90.mp4": "/Portfolio/static/media/movies.ae9f3f90.mp4",
-    "static/media/ongoing.4fd4443f.png": "/Portfolio/static/media/ongoing.4fd4443f.png",
     "static/media/profile.da5fa130.png": "/Portfolio/static/media/profile.da5fa130.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5d68f097.js",
     "static/js/2.26add56a.chunk.js",
-    "static/js/main.85aa56db.chunk.js"
+    "static/js/main.04baa589.chunk.js"
   ]
 }
